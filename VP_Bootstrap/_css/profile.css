@@ -1,0 +1,150 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+#backBtn {
+	max-width: 150px;
+	margin-top: 22px;
+}
+
+h1 {
+	text-align: right;
+	margin-right: 0;
+}
+
+.btn-lg {
+	margin: 15px auto 0;
+	min-height: 80px;
+	width: 100%;
+	border: none;
+	font-size: 1.4em;
+}
+
+button {
+	outline: none;
+}
+
+header {
+	padding-bottom: 0;
+	background-color: #191919;
+	color: white;
+}
+
+header>div {
+	padding-bottom: 0;
+}
+
+header>div>div:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.modal {
+	color: black;
+}
+
+header .nav{
+	margin: 40px auto 0;
+	border: none;
+}
+
+header li a, header li a:visited {
+	color: white;
+}
+
+header li a:hover, header li a:focus {
+	color: black;
+}
+
+article {
+	margin: 30px auto;
+}
+
+#userInfo td {
+	text-align: right;
+}
+
+#network{
+	text-align: center;
+}
+
+.down-arrow {
+	font-size: 0.5em;
+}
+
+#network .row {
+	padding: 15px;
+	min-height: 100px;
+	border-bottom: 1px solid black;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#network .row:last-child {
+	border-bottom: none;
+}
+
+.icon {
+	font-size: 3em;
+}
+
+.col-md-4 {
+	padding: 5px 0;
+}
+
+.empty {
+	color: lightgray;
+}
+
+.empty:hover {
+	cursor: not-allowed;
+}
+
+.dl-lined-box {
+	border-left: 1px solid black;
+	border-left: 1px solid rgba(0, 0, 0, 0.3);
+	border-right: 1px solid black;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#mail table {
+	border: 1px solid #ddd;
+}
+
+.vert-align {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+.badge + .glyphicon {
+	
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 48em) {
+	h1 {
+		text-align: center;
+	}
+	.btn-lg {
+		height: 100px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 62em) {
+	.btn-lg {
+		height: 80px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 75em) {
+	
+}

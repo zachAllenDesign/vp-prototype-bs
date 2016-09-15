@@ -1,0 +1,168 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'stylus',
+1 verbose cli   '-g' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'stylus', null ]
+7 verbose cache add spec stylus
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'stylus',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'stylus',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed stylus@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for stylus
+11 info addNameTag [ 'stylus', 'latest' ]
+12 silly mapToRegistry name stylus
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'stylus',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'stylus',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/stylus
+17 verbose addNameTag registry:https://registry.npmjs.org/stylus not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/stylus
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 11:28:13 AM
+21 verbose request id 51d4282e31ef0393
+22 verbose etag "EAAE1SLSJRJBLAMPH5F09V7C8"
+23 http request GET https://registry.npmjs.org/stylus
+24 http 304 https://registry.npmjs.org/stylus
+25 verbose headers { date: 'Fri, 12 Aug 2016 16:28:14 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"EAAE1SLSJRJBLAMPH5F09V7C8"',
+25 verbose headers   age: '214',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-dfw1846-DFW',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '1',
+25 verbose headers   'x-timer': 'S1471019294.572103,VS0,VE0',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Fri, 12 Aug 2016 16:28:14 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"EAAE1SLSJRJBLAMPH5F09V7C8"',
+26 silly get     age: '214',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-dfw1846-DFW',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1471019294.572103,VS0,VE0',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/stylus from cache
+28 verbose get saving stylus to /Users/zallen/.npm/registry.npmjs.org/stylus/.cache.json
+29 verbose correctMkdir /Users/zallen/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for stylus with tag latest
+31 silly addNamed stylus@0.54.5
+32 verbose addNamed "0.54.5" is a plain semver version for stylus
+33 silly cache afterAdd stylus@0.54.5
+34 verbose afterAdd /Users/zallen/.npm/stylus/0.54.5/package/package.json not in flight; writing
+35 verbose correctMkdir /Users/zallen/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /Users/zallen/.npm/stylus/0.54.5/package/package.json written
+37 silly install resolved [ { name: 'stylus',
+37 silly install resolved     description: 'Robust, expressive, and feature-rich CSS superset',
+37 silly install resolved     version: '0.54.5',
+37 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+37 silly install resolved     keywords: [ 'css', 'parser', 'style', 'stylesheets', 'jade', 'language' ],
+37 silly install resolved     repository: { type: 'git', url: 'git://github.com/stylus/stylus.git' },
+37 silly install resolved     main: './index.js',
+37 silly install resolved     browserify: './lib/browserify.js',
+37 silly install resolved     engines: { node: '*' },
+37 silly install resolved     bin: { stylus: './bin/stylus' },
+37 silly install resolved     scripts:
+37 silly install resolved      { prepublish: 'npm prune',
+37 silly install resolved        test: 'mocha test/ test/middleware/ --require should --bail --check-leaks --reporter dot',
+37 silly install resolved        'test-cov': 'mocha test/ test/middleware/ --require should --bail --reporter html-cov > coverage.html' },
+37 silly install resolved     dependencies:
+37 silly install resolved      { 'css-parse': '1.7.x',
+37 silly install resolved        mkdirp: '0.5.x',
+37 silly install resolved        debug: '*',
+37 silly install resolved        sax: '0.5.x',
+37 silly install resolved        glob: '7.0.x',
+37 silly install resolved        'source-map': '0.1.x' },
+37 silly install resolved     devDependencies: { should: '8.x', mocha: '*', jscoverage: '0.3.8' },
+37 silly install resolved     bugs: { url: 'https://github.com/stylus/stylus/issues' },
+37 silly install resolved     homepage: 'https://github.com/stylus/stylus',
+37 silly install resolved     directories: { doc: 'docs', example: 'examples', test: 'test' },
+37 silly install resolved     license: 'MIT',
+37 silly install resolved     gitHead: '5aff5ed0e3f482ed48f30110e24fccad7f5559ab',
+37 silly install resolved     _id: 'stylus@0.54.5',
+37 silly install resolved     _shasum: '42b9560931ca7090ce8515a798ba9e6aa3d6dc79',
+37 silly install resolved     _from: 'stylus@latest',
+37 silly install resolved     _npmVersion: '3.8.3',
+37 silly install resolved     _nodeVersion: '5.10.1',
+37 silly install resolved     _npmUser: { name: 'panya', email: 'panyakor@gmail.com' },
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: '42b9560931ca7090ce8515a798ba9e6aa3d6dc79',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/stylus/-/stylus-0.54.5.tgz' },
+37 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+37 silly install resolved        tmp: 'tmp/stylus-0.54.5.tgz_1461796984140_0.8051077802665532' },
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/stylus/-/stylus-0.54.5.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install stylus@0.54.5 into /usr/local/lib
+39 info installOne stylus@0.54.5
+40 verbose installOne of stylus to /usr/local/lib not in flight; installing
+41 verbose correctMkdir /Users/zallen/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /Users/zallen/.npm/_locks/stylus-c3eec871ff9af39a.lock for /usr/local/lib/node_modules/stylus
+43 silly install write writing stylus 0.54.5 to /usr/local/lib/node_modules/stylus
+44 verbose unbuild lib/node_modules/stylus
+45 silly gentlyRm /usr/local/lib/node_modules/stylus is being purged from base /usr/local
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/stylus
+47 verbose tar unpack /Users/zallen/.npm/stylus/0.54.5/package.tgz
+48 verbose tar unpacking to /usr/local/lib/node_modules/stylus
+49 silly gentlyRm /usr/local/lib/node_modules/stylus is being purged
+50 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/stylus
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 error tar.unpack untar error /Users/zallen/.npm/stylus/0.54.5/package.tgz
+53 verbose unlock done using /Users/zallen/.npm/_locks/stylus-c3eec871ff9af39a.lock for /usr/local/lib/node_modules/stylus
+54 verbose fstream_path /usr/local/lib/node_modules/stylus
+55 verbose fstream_type Directory
+56 verbose fstream_class DirWriter
+57 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/stylus'
+57 verbose stack     at Error (native)
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+58 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+59 verbose cwd /Users/zallen/Desktop/firestarter
+60 error Darwin 15.4.0
+61 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "stylus" "-g"
+62 error node v4.4.7
+63 error npm  v2.15.8
+64 error path /usr/local/lib/node_modules/stylus
+65 error code EACCES
+66 error errno -13
+67 error syscall mkdir
+68 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/stylus'
+68 error     at Error (native)
+68 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/stylus']
+68 error   errno: -13,
+68 error   code: 'EACCES',
+68 error   syscall: 'mkdir',
+68 error   path: '/usr/local/lib/node_modules/stylus',
+68 error   fstream_type: 'Directory',
+68 error   fstream_path: '/usr/local/lib/node_modules/stylus',
+68 error   fstream_class: 'DirWriter',
+68 error   fstream_stack:
+68 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+68 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+68 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ -13, true ]
+71 verbose unbuild lib/node_modules/stylus
+72 silly gentlyRm /usr/local/lib/node_modules/stylus is being purged from base /usr/local
+73 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/stylus

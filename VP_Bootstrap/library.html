@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+  <title>Firestarter</title>
+  <meta name="description" content="FirestarterLanding">
+  <meta name="author" content="ZachAllen">
+	  <!-- Material Design fonts -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Bootstrap Material Design -->
+  <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-material-design.css">
+  <link rel="stylesheet" type="text/css" href="dist/css/ripples.min.css">
+  <link rel="stylesheet" href="_css/main.css">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<div id="pushBody"></div>
+
+<div id="navigator">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobileMenu" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Brand</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="mobileMenu">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#popAnchor">About Us</a></li>
+					<li><a href="#genresAnchor">Artists</a></li>
+					<li><a href="#pressAnchor">Press &#38; Media</a></li>
+					<li><a href="#opporAnchor">Opportunities</a></li>
+					<li><a href="#contactAnchor">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+</div>
+
+<article class="coontainer">
+	<section id="pop" class="full-page" style="background-color:#6ba59a">
+		<a name="anchor" class="anchor" id="popAnchor"></a>
+		<div class="col-xs-12 col-sm-12 col-md-3" style="background-color:white;height:100%;"></div>
+	</section>
+	
+	<section id="rock" class="full-page" style="background-color:#be5e87">
+		<a name="anchor" class="anchor" id="rockAnchor"></a>
+		
+	</section>
+	
+	<section id="soul" class="full-page" style="background-color:#5ea4be">
+		<a name="anchor" class="anchor" id="soulAnchor"></a>
+		
+	</section>
+	
+	<section id="ctry" class="full-page" style="background-color:#bda35f">
+		<a name="anchor" class="anchor" id="ctryAnchor"></a>
+		
+	</section>
+	
+	<section id="rap" class="full-page" style="background-color:#a16ba6">
+		<a name="anchor" class="anchor" id="rapAnchor"></a>
+		
+	</section>
+	
+	<section id="jazz" class="full-page" style="background-color:#be8c5e">
+		<a name="anchor" class="anchor" id="jazzAnchor"></a>
+		
+	</section>
+	
+	<section id="insp" class="full-page" style="background-color:#7eb265">
+		<a name="anchor" class="anchor" id="inspAnchor"></a>
+		
+	</section>
+</article>
+
+<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="_js/script.js"></script>
+  <script>
+		$('.navbar-collapse a').click(function (e) {
+			$('.navbar-collapse').collapse('toggle');
+		});
+	</script>
+	<script src="_js/slider-init.js"></script>
+</body>
+</html>

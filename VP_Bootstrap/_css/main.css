@@ -1,0 +1,321 @@
+/* ================================================
+
+Vox Populi - Landing Page CSS
+	Author: Zach Allen
+
+	Colors
+		Gold:      #bda35f
+		Turquoise: #6ba59a
+		Brown:     #be8c5e
+		Purple:    #a16ba6
+		Blue:      #5ea4be
+		Green:     #7eb265
+		Red:       #be5e87
+
+================================================ */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	height: 100vh;
+	background-color: black;
+}
+/*--------------------------------
+| Navigation
+--------------------------------*/
+#navigator {
+	display: none;
+}
+.navbar {
+	margin-bottom: 0;
+	border: none;
+	border-radius: 0;
+	z-index: 999;
+	height: 50px;
+	background-color: black;
+}
+.navbar-collapse {
+	background-color: black;
+}
+.navbar-default .navbar-nav {
+	margin-right: 16px;
+}
+.navbar-brand img {
+	height: 28px;
+	display: inline;
+}
+.navbar-default .navbar-nav>li>a, #headerInfo li a {
+	padding: 40px auto;
+	color: white;
+	font-size: 1.3em;
+	font-weight: 100;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: gray;
+}
+.navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:focus {
+	color: red;
+}
+#indicator ul {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 40%; right: 5%;
+	width: 20px;
+	list-style-type: none;
+	font-size: 1.6em;
+	text-align: center;
+}
+#indicator li a, #indicator li a:hover, #indicator li a:active, #indicator li a:active:focus, #indicator li a:focus, #indicator li a:visited {
+	color: red;
+	text-decoration: none;
+}
+
+/*--------------------------------
+| Splash Page
+--------------------------------*/
+#home {
+	height: 100vh;
+}
+#headerContent {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-image: url("../_content/img/rock-bg.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#headerContent img {
+	position: absolute;
+	left: 5%; bottom: 0;
+	max-height: 1000px;
+	max-width: 50%;
+}
+#headerContent p {
+	position: absolute;
+	top: 5%; right: 10%; left: 10%;
+	font-size: 3em;
+	font-weight: 100;
+	text-align: center;
+}
+#textbox {
+
+}
+#scrollArrow {
+	position: absolute;
+	top: 90%;
+	font-size: 1.5em;
+	font-weight: 100;
+	text-align: center;
+}
+#scrollArrow span{
+	font-size: 0.75em;
+}
+#headerInfo {
+	margin: 0 auto;
+	padding-top: 5%;
+	float: right;
+	height: 450px;
+	font-size: 1.4em;
+	text-align: center;
+	background-color: black;
+}
+#headerInfo button {
+	margin: 0 auto;
+	padding: 40px auto;
+	color: white;
+	font-size: 1.5em;
+	font-weight: 100;
+	border-radius: 0;
+	border: 1px solid white;
+	background-color: black;
+	color: white;
+}
+#headerInfo ul {
+	position: relative;
+	top: 10%;
+	padding: 0;
+	list-style-type: none;
+}
+#headerInfo li {
+	margin: 0px auto;
+}
+/*--------------------------------
+| Main Content
+--------------------------------*/
+article {
+	padding: 0;
+	margin: 0;
+}
+section {
+	margin: auto -15px;
+	padding: 0;
+	position: relative;
+	height: 100vh;
+	height: calc(100vh - 50px);
+	min-height: 650px;
+}
+strong {
+	color: red;
+	font-weight: 400;
+}
+.anchor {
+	position: absolute;
+	top: -50px;
+}
+#pushBody {
+		height: 50px;
+	}
+/*--------------------------------
+| About
+--------------------------------*/
+#aboutAnchor {
+	top: -99px;
+}
+#about, #press, #oppor, #contact {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#about {
+	min-height: 480px;
+	background-image: url('../_content/img/bg-about.png');
+	background-position: center;
+	background-size: cover;
+}
+#about div{
+	position: absolute;
+  top: 50%; left: 5%;
+  transform: perspective(1px) translateY(-50%);
+	width: 90%;
+}
+#about div p {
+	font-size: 1.5em;
+	font-weight: 100;
+	text-align: center;
+}
+/*--------------------------------
+| Genres
+--------------------------------*/
+#genres {
+	margin: 0 -15px;
+	padding: 0;
+	height: 1120px;
+	line-height: 0px;
+}
+.genre-btn {
+	display: block;
+	height: 160px;
+}
+/*--------------------------------
+| Opportunities
+--------------------------------*/
+#oppor {
+	margin: 0;
+	padding: 0;
+}
+#oppor div {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+}
+/*--------------------------------
+| Contact
+--------------------------------*/
+#contact h3 {
+	display: block;
+	margin: 0 0 16px 0;
+	padding: 8 auto;
+	border: none;
+	color: white;
+	font-size: 1.5em;
+	font-weight: 300;
+	text-align: center;
+}
+#contact a {
+	display: block;
+	white-space: normal;
+}
+label {
+	font-weight: 300;
+}
+textarea {
+	resize: none;
+}
+
+.vert-align {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+/* Small Screens */
+@media (min-width: 48em) {
+	#headerInfo {
+		height: 100%;
+	}
+	#headerInfo li {
+		margin: 40px auto;
+	}
+	.navbar {
+		height: 100px;
+	}
+	.navbar-brand img {
+		height: 48px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		margin-top: 24px;
+	}
+	.anchor {
+		position: absolute;
+		top: -100px;
+	}
+	section, #genres {
+		height: calc(100vh - 96px);
+	}
+	#pushBody {
+		height: 100px;
+	}
+	#about + div {
+		width: 80%;
+	}
+	#about + div > p {
+		font-size: 2em;
+	}
+	#contact a {
+		margin-bottom: 16px;
+	}
+}
+
+/* Medium Screens */
+@media (min-width: 62em) {
+	#headerContent p {
+		position: absolute;
+		top: 50%; right: 5%;
+		text-align: right;
+	}
+	#genre {
+		height: calc(100vh - 96px);
+	}
+	.genre-btn {
+		height: 100vh;
+		width: 14.28%;
+		display: inline-block;
+	}
+	#about + div {
+		width: 70%;
+	}
+}
+
+/* Large Screens */
+@media (min-width: 75em) {
+
+}
