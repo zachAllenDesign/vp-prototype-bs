@@ -15,7 +15,8 @@ Vox Populi - Landing Page CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Page Basics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-html, body {
+html,
+body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -52,7 +53,8 @@ body {
 .navbar-default .navbar-nav {
 	margin-right: 16px;
 }
-.navbar-default .navbar-nav>li>a, #headerInfo li a {
+.navbar-default .navbar-nav>li>a,
+#headerInfo li a {
 	padding: 40px auto;
 	color: white;
 	font-size: 1.3em;
@@ -61,7 +63,8 @@ body {
 .navbar-default .navbar-nav>li>a:hover {
 	color: gray;
 }
-.navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:focus {
 	color: red;
 }
 #indicator ul {
@@ -74,7 +77,12 @@ body {
 	font-size: 1.6em;
 	text-align: center;
 }
-#indicator li a, #indicator li a:hover, #indicator li a:active, #indicator li a:active:focus, #indicator li a:focus, #indicator li a:visited {
+#indicator li a,
+#indicator li a:hover,
+#indicator li a:active,
+#indicator li a:active:focus,
+#indicator li a:focus,
+#indicator li a:visited {
 	color: red;
 	text-decoration: none;
 }
@@ -241,9 +249,6 @@ strong {
 	#pushBody {
 		height: 100px;
 	}
-	.ad-space {
-		max-height: 100%;
-	}
 }
 
 /* About
@@ -251,7 +256,10 @@ strong {
 #aboutAnchor {
 	top: -99px;
 }
-#about, #press, #oppor, #contact {
+#about,
+#press,
+#oppor,
+#contact {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -380,7 +388,6 @@ textarea {
 	border-radius: 0 15px 15px 0;
 	border: 1px solid white;
 }
-
 .ad-space {
 	max-height: 320px;
 }

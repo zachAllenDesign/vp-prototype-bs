@@ -37,10 +37,12 @@ header .nav{
 	margin: 40px auto 0;
 	border: none;
 }
-header li a, header li a:visited {
+header li a,
+header li a:visited {
 	color: white;
 }
-header li a:hover, header li a:focus {
+header li a:hover,
+header li a:focus {
 	color: black;
 }
 
