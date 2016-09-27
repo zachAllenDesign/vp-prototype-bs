@@ -228,12 +228,6 @@ strong {
 #pushBody {
 	height: 50px;
 }
-.ad-space {
-	max-height: 320px;
-}
-.full-page {
-	min-height: 960px;
-}
 
 /* Small Screens */
 @media (min-width: 48em) {
@@ -371,6 +365,33 @@ textarea {
 @media (min-width: 48em) {
 	#contact a {
 		margin-bottom: 16px;
+	}
+}
+
+/* Library
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#searchBar {
+	border-radius: 15px 0 0 15px;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+}
+#searchBar + span > button {
+	border-radius: 0 15px 15px 0;
+	border: 1px solid white;
+}
+
+.ad-space {
+	max-height: 320px;
+}
+.full-page {
+	min-height: 960px;
+}
+
+/* Small Screens */
+@media (min-width: 48em) {
+	.ad-space {
+		max-height: 100%;
 	}
 }
 
