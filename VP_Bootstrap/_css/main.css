@@ -95,7 +95,7 @@ body {
 #brandText {
 	display: none;
 }
-@media (min-width: 48em) {
+@media (min-width: 768px) {
 	#brandLogo {
 		height: 48px;
 		margin: 12px;
@@ -112,7 +112,7 @@ body {
 }
 
 /* Small Screens */
-@media (min-width: 48em) {
+@media (min-width: 768px) {
 	.navbar {
 		height: 100px;
 	}
@@ -147,9 +147,6 @@ body {
 	font-size: 3em;
 	font-weight: 100;
 	text-align: center;
-}
-#textbox {
-
 }
 #scrollArrow {
 	position: absolute;
@@ -192,7 +189,7 @@ body {
 }
 
 /* Small Screens */
-@media (min-width: 48em) {
+@media (min-width: 768px) {
 	#headerInfo {
 		height: 100%;
 	}
@@ -202,7 +199,7 @@ body {
 }
 
 /* Medium Screens */
-@media (min-width: 62em) {
+@media (min-width: 992px) {
 	#headerContent p {
 		position: absolute;
 		top: 50%; right: 5%;
@@ -238,7 +235,7 @@ strong {
 }
 
 /* Small Screens */
-@media (min-width: 48em) {
+@media (min-width: 768px) {
 	.anchor {
 		position: absolute;
 		top: -100px;
@@ -283,7 +280,7 @@ strong {
 }
 
 /* Small Screens */
-@media (min-width: 48em) {
+@media (min-width: 768px) {
 	#about + div {
 		width: 80%;
 	}
@@ -293,7 +290,7 @@ strong {
 }
 
 /* Medium Screens */
-@media (min-width: 62em) {
+@media (min-width: 992px) {
 	#about + div {
 		width: 70%;
 	}
@@ -313,14 +310,14 @@ strong {
 }
 
 /* Small Screens */
-@media (min-width: 48em) {
+@media (min-width: 768px) {
 	#genres {
 		height: calc(100vh - 96px);
 	}
 }
 
 /* Medium Screens */
-@media (min-width: 62em) {
+@media (min-width: 992px) {
 	#genre {
 		height: calc(100vh - 96px);
 	}
@@ -370,7 +367,7 @@ textarea {
 }
 
 /* Small Screens */
-@media (min-width: 48em) {
+@media (min-width: 768px) {
 	#contact a {
 		margin-bottom: 16px;
 	}
@@ -396,7 +393,7 @@ textarea {
 }
 
 /* Small Screens */
-@media (min-width: 48em) {
+@media (min-width: 768px) {
 	.ad-space {
 		max-height: 100%;
 	}
@@ -406,10 +403,10 @@ textarea {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Small Screens */
-@media (min-width: 48em) {}
+@media (min-width: 768px) {}
 
 /* Medium Screens */
-@media (min-width: 62em) {}
+@media (min-width: 992px) {}
 
 /* Large Screens */
 @media (min-width: 75em) {}
