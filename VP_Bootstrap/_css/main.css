@@ -375,6 +375,9 @@ textarea {
 
 /* Library
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+#search-container {
+	margin: 32px auto;
+}
 #searchBar {
 	border-radius: 15px 0 0 15px;
 	border: 1px solid white;
@@ -412,7 +415,7 @@ textarea {
 	border-radius: 8px;
 }
 #album {
-
+	margin: 82px auto;
 }
 
 /* Media Queries
