@@ -130,7 +130,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background-image: url("../_content/img/rock-bg.jpg");
+	background-image: url("../_content/img/bg_rock.jpg");
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-position:center;
@@ -408,6 +408,13 @@ textarea {
 	position: absolute;
 	top: 24px; left: 36px;
 }
+#album-extra-info {
+	text-align: left;
+}
+#album-btn-container {
+	padding-top: 10px;
+	text-align: right;
+}
 .album-btn {
 	padding: 8px 16px;
 	background-color: transparent;
@@ -416,6 +423,16 @@ textarea {
 }
 #album {
 	margin: 82px auto;
+}
+#album > img {
+	width: 100%;
+}
+#rwd-btn > img, #play-btn>img, #ffw-btn>img {
+	margin: 0 16px;
+	height: 64px;
+}
+.song-length {
+	text-align: right;
 }
 
 /* Media Queries
