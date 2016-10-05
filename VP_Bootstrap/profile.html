@@ -20,7 +20,8 @@
 	<!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" type="text/css" href="_lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="_css/profile.css">
+	<link rel="stylesheet" type="text/css" href="_lib/fullcalendar-3.0.1/fullcalendar.min.css">
+  <link rel="stylesheet" type="text/css" href="_css/profile.css">
 
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -120,7 +121,7 @@
 			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 			<div class="row">
 				<ul class="nav nav-tabs">
-					<li role="presentation" class="active"><a data-toggle="tab" href="#userInfo">User Info</a></li>
+					<li role="presentation" class="active"><a data-toggle="tab" href="#userInfo">Info</a></li>
 					<li role="presentation"><a data-toggle="tab" href="#network">Network</a></li>
 					<li role="presentation"><a data-toggle="tab" href="#mail">Mail <span class="badge">4</span></a></li>
 					<li role="presentation"><a data-toggle="tab" href="#calendar">Calendar</a></li>
@@ -353,14 +354,24 @@
 		</section>
 
 		<section id="calendar" class="tab-pane fade">
-
+			<div id='calendar'></div>
 		</section>
 	</article>
 	<!-- Scripts
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  	<script src="_lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+ 	<script src="_lib/moment-min.js"></script>
+ 	<script src="_lib/fullcalendar-3.0.1/fullcalendar.min.js"></script>
   <script src="_js/script.js"></script>
+  <script>
+		$(document).ready(function() {
+			$('#calendar').fullCalendar();
+			$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+				$('#calendar').fullCalendar('render');
+			});
+		});
+	</script>
 
 <!-- End of Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
