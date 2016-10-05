@@ -427,12 +427,17 @@ textarea {
 #album > img {
 	width: 100%;
 }
-#rwd-btn > img, #play-btn>img, #ffw-btn>img {
-	margin: 0 16px;
-	height: 64px;
+#album>.row {
+	margin-bottom: 16px;
+}
+.ctrl-btn {
+	max-height: 64px;
+}
+#song-list {
+	padding-left: 20px;
 }
 .song-length {
-	text-align: right;
+	float: right;
 }
 
 /* Media Queries
