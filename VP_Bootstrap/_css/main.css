@@ -60,6 +60,15 @@ body {
 	font-size: 1.3em;
 	font-weight: 100;
 }
+.navbar-form {
+	margin: 0 auto;
+	margin-right: -16px;
+	width: 100%;
+	color: white;
+	font-size: 1.3em;
+	font-weight: 100;
+	border: none;
+}
 .navbar-default .navbar-nav>li>a:hover {
 	color: gray;
 }
@@ -118,6 +127,14 @@ body {
 	}
 	.navbar-default .navbar-nav>li>a {
 		margin-top: 24px;
+	}
+	.navbar-form {
+		margin: 32px auto;
+		width: 100%;
+		color: white;
+		font-size: 1.3em;
+		font-weight: 100;
+		border: none;
 	}
 }
 
