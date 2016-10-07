@@ -38,7 +38,7 @@
 			<button class="btn btn-default">Log in</button>
 			<ul>
 				<li><a href="#aboutAnchor">About us</a></li>
-				<li><a href="#genresAnchor">Genres</a></li>
+				<li><a href="#libAnchor">Genres</a></li>
 				<li><a href="#pressAnchor">Press &#38; Media</a></li>
 				<li><a href="#opporAnchor">Opportunities</a></li>
 				<li><a href="#contactAnchor">Contact</a></li>
@@ -47,11 +47,15 @@
 		<div id="headerContent" class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
 			<img src="_content/img/fist.png" alt="Fist">
 			<div id="textbox">
+				<div id="headerLogo">
+				<img src="_content/img/logo.png" alt="VP Logo" class="img-responsive">
+				<img src="_content/img/logo_text.png" alt="Vox Populi" class="img-responsive">
+			</div>
 				<p>Where <strong>YOU</strong> are the <strong>INDUSTRY</strong>.</p>
 			</div>
 			<div id="scrollArrow" class="col-xs-12 hidden-sm hidden-md hidden-lg">
-				Scroll down<br>
-				<span class="glyphicon glyphicon-chevron-down"></span>
+				<a href="#aboutAnchor">Scroll down<br>
+				<span class="glyphicon glyphicon-chevron-down"></span></a>
 			</div>
 		</div>
 	</header>
@@ -80,7 +84,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a class="nav-link" href="#home">Home</a></li>
 						<li><a class="nav-link" href="#aboutAnchor">About Us</a></li>
-						<li><a class="nav-link" href="#genresAnchor">Genres</a></li>
+						<li><a class="nav-link" href="#libAnchor">Library</a></li>
 						<li><a class="nav-link" href="#pressAnchor">Press &#38; Media</a></li>
 						<li><a class="nav-link" href="#opporAnchor">Opportunities</a></li>
 						<li><a class="nav-link" href="#contactAnchor">Contact</a></li>
@@ -93,7 +97,7 @@
 		<div id="indicator" class="hidden-xs col-sm-1 pull-right">
 			<ul>
 				<li class="bullet"><a href="#aboutAnchor">&#9675;</a></li>
-				<li class="bullet"><a href="#genresAnchor">&#9675;</a></li>
+				<li class="bullet"><a href="#libAnchor">&#9675;</a></li>
 				<li class="bullet"><a href="#pressAnchor">&#9675;</a></li>
 				<li class="bullet"><a href="#opporAnchor">&#9675;</a></li>
 				<li class="bullet"><a href="#contactAnchor">&#9675;</a></li>
@@ -118,16 +122,23 @@
 		<!-- Genres
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<section id="genres">
-			<a name="anchor" class="anchor" id="genresAnchor"></a>
-			<div id="genreList">
-				<a href="#" class="genre-btn" style="background-color:#bda35f">
-				</a><a href="#" class="genre-btn" style="background-color:#6ba59a">
-				</a><a href="#" class="genre-btn" style="background-color:#be8c5e">
-				</a><a href="#" class="genre-btn" style="background-color:#a16ba6">
-				</a><a href="#" class="genre-btn" style="background-color:#5ea4be">
-				</a><a href="#" class="genre-btn" style="background-color:#7eb265">
-				</a><a href="#" class="genre-btn" style="background-color:#be5e87"></a>
-			</div>
+			<a name="anchor" class="anchor" id="libAnchor"></a>
+			<ul id="genreList">
+				<li href="#" class="genre-btn" style="background-color:#bda35f">
+					<a href="#" class="vert-align">POP</a>
+				</li><li href="#" class="genre-btn" style="background-color:#6ba59a">
+					<a href="#" class="vert-align">CTRY</a>
+				</li><li href="#" class="genre-btn" style="background-color:#be8c5e">
+					<a href="#" class="vert-align">JAZZ</a>
+				</li><li href="#" class="genre-btn" style="background-color:#a16ba6">
+					<a href="#" class="vert-align">WRLD</a>
+				</li><li href="#" class="genre-btn" style="background-color:#5ea4be">
+					<a href="#" class="vert-align">INSP</a>
+				</li><li href="#" class="genre-btn" style="background-color:#7eb265">
+					<a href="#" class="vert-align">SOUL</a>
+				</li><li href="#" class="genre-btn" style="background-color:#be5e87">
+					<a href="#" class="vert-align">ROCK</a></li>
+			</ul>
 		</section>
 
 		<!-- Press and Media
@@ -143,10 +154,10 @@
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<section id="oppor">
 			<a name="anchor" class="anchor" id="opporAnchor"></a>
-			<div id="artistButton" style="padding-left:-15px;background-color:darkblue;">
-
-			</div><div id="agentButton" style="padding-right:-15px;background-color:red;">
-
+			<div id="agentButton">
+				<a href="#" class="vert-align">Become an Agent</a>
+			</div><div id="artistButton">
+				<a href="#" class="vert-align">Become an Artist</a>
 			</div>
 		</section>
 
@@ -154,64 +165,66 @@
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<section id="contact">
 			<a name="anchor" class="anchor" id="contactAnchor"></a>
-			<div class="container vert-align">
-				<!-- Contact Form
-				–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-				<div class="col-sm-8">
-					<form action="">
-						<h3>Contact us</h3>
+			<div class="vert-align">
+				<div class="container">
+					<!-- Contact Form
+					–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+					<div class="col-sm-8 col-md-6">
+						<form action="">
+							<h3>Contact us</h3>
 
-						<!-- Name
-						–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-						<div class="row form-group">
-							<label class="col-md-4 control-label text-right">Name</label>
-							<div class="col-md-8 inputGroupContainer">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-									<input name="first_name" placeholder="Name" class="form-control" type="text">
+							<!-- Name
+							–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+							<div class="row form-group">
+								<label class="col-md-3 control-label text-right">Name</label>
+								<div class="col-md-9 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input name="first_name" placeholder="Name" class="form-control" type="text">
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- Email
-						–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-						<div class="row form-group">
-							<label class="col-md-4 control-label text-right">E-Mail</label>
-							<div class="col-md-8 inputGroupContainer">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-									<input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+							<!-- Email
+							–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+							<div class="row form-group">
+								<label class="col-md-3 control-label text-right">E-Mail</label>
+								<div class="col-md-9 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+										<input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- Message
-						–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-						<div class="row form-group">
-							<label class="col-md-4 control-label text-right" for="message">Message:</label>
-							<div class="col-md-8">
-								<textarea class="form-control" rows="10" id="message" style="min-width:280px"></textarea>
+							<!-- Message
+							–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+							<div class="row form-group">
+								<label class="col-md-3 control-label text-right" for="message">Message:</label>
+								<div class="col-md-9">
+									<textarea class="form-control" rows="10" id="message" style="min-width:280px"></textarea>
+								</div>
 							</div>
-						</div>
 
-						<!-- Submit
-						–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-						<div class="row form-group">
-							<button class="btn btn-primary pull-right" role="button" style="margin-right: 15px">Submit</button>
-						</div>
-					</form>
-				</div>
+							<!-- Submit
+							–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+							<div class="row form-group">
+								<button class="btn btn-primary pull-right" role="button" style="margin-right: 15px">Submit</button>
+							</div>
+						</form>
+					</div>
 
-				<!-- Downloads
-				–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-				<div class="col-sm-4 pull-left">
-					<h3 class="row">Downloads</h3>
-					<div class="row">
-						<div class="col-xs-6 col-sm-12">
-							<a href="#" class="btn btn-info">Download Terms of Service PDF</a>
-						</div>
-						<div class="col-xs-6 col-sm-12">
-							<a href="#" class="btn btn-danger">Download Privacy Policy PDF</a>
+					<!-- Downloads
+					–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+					<div class="col-sm-4 pull-left">
+						<h3 class="row">Downloads</h3>
+						<div class="row">
+							<div class="col-xs-6 col-sm-12">
+								<a href="#" class="btn btn-info">Download Terms of Service PDF</a>
+							</div>
+							<div class="col-xs-6 col-sm-12">
+								<a href="#" class="btn btn-danger">Download Privacy Policy PDF</a>
+							</div>
 						</div>
 					</div>
 				</div>

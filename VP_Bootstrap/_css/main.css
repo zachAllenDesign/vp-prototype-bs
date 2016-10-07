@@ -155,18 +155,28 @@ body {
 	background-repeat:no-repeat;
 	background-position:center;
 }
-#headerContent img {
+#headerContent>img {
 	position: absolute;
 	left: 5%; bottom: 0;
-	max-height: 1000px;
+	max-height: 80%;
 	max-width: 50%;
 }
 #headerContent p {
 	position: absolute;
 	top: 5%; right: 10%; left: 10%;
 	font-size: 3em;
-	font-weight: 100;
+	font-weight: 300;
 	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+#headerLogo {
+	position: absolute;
+	top: 25%; right: 5%;
+}
+#headerLogo img{
+	position: relative;
+	display: inline-block;
+	max-height: 96px;
 }
 #scrollArrow {
 	position: absolute;
@@ -324,21 +334,25 @@ strong {
 	height: 1120px;
 	line-height: 0px;
 }
+#genreList {
+	padding: 0;
+	text-align: center;
+}
 .genre-btn {
 	display: block;
 	height: 160px;
 }
-
-/* Small Screens */
-@media (min-width: 768px) {
-	#genres {
-		height: calc(100vh - 96px);
-	}
+.genre-btn a {
+	margin: 0 auto;
+	color: white;
+	text-decoration: none;
+	font-weight: 100;
+	font-size: 2em;
 }
 
 /* Medium Screens */
 @media (min-width: 992px) {
-	#genre {
+	#genres {
 		height: calc(100vh - 96px);
 	}
 	.genre-btn {
@@ -357,10 +371,32 @@ strong {
 #oppor div {
 	margin: 0;
 	padding: 0;
-	height: 100%;
-	width: 50%;
-	display: inline-block;
+	height: 50%;
+	width: 100%;
+	display: block;
 	text-align: center;
+}
+#oppor div a {
+	color: white;
+	text-decoration: none;
+	font-weight: 100;
+	font-size: 2em;
+}
+#artistButton {
+	padding-left:-15px;
+	background-color:darkblue;
+}
+#agentButton {
+	padding-right:-15px;
+	background-color:red;
+}
+/* Small Screens */
+@media (min-width: 768px) {
+	#oppor div {
+		height: 100%;
+		width: 50%;
+		display: inline-block;
+	}
 }
 
 /* Contact
