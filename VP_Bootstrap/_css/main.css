@@ -368,7 +368,8 @@ strong {
 	margin: 0 -15px;
 	padding: 0;
 }
-#oppor div {
+#artistButton, #agentButton {
+	position: relative;
 	margin: 0;
 	padding: 0;
 	height: 50%;
@@ -377,10 +378,17 @@ strong {
 	text-align: center;
 }
 #oppor div a {
+	position: absolute;
+	top: 50%; left: 50%;
+	margin-left: -120px;
+	padding: 12px;
 	color: white;
 	text-decoration: none;
 	font-weight: 100;
 	font-size: 2em;
+}
+#oppor div a:hover {
+	border-bottom: 1px solid white;
 }
 #artistButton {
 	padding-left:-15px;
